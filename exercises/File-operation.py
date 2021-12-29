@@ -7,7 +7,7 @@
 import os
 
 # 引入控制台颜色修改方法
-from library.consolecolor import *
+from library.console_color import *
 
 
 def create_a_file():
@@ -41,7 +41,7 @@ def delete_the_file():
         return
     file_url = get_file_url(file_name)
     if not os.path.exists(file_url):
-        print(FontColor.set_color(f"文件 {file_name} 不存在", Colors.Pink))
+        print(FontColor.set_color(f"文件 {file_name} 不存在", Colors.yellow))
         return
     os.remove(file_url)
     print(FontColor.set_color(f"文件 {file_name} 删除成功!", Colors.green))

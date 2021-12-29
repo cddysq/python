@@ -4,6 +4,3 @@
 # @version :v1.0.0
 
 """ 自定义解析包 """
-__all__ = {
-    'console_color'
-}
